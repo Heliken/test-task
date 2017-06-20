@@ -1,0 +1,24 @@
+@media screen and (max-width: 1230px) {
+  .header {
+    width: 932px; }
+    .header__banner {
+      display: none; }
+  .top-menu {
+    width: 74.19%; }
+    .top-menu__list__unit:nth-child(-n+2) {
+      margin-right: 16px; }
+    .top-menu__list__unit:nth-child(3) {
+      display: none; }
+    .top-menu__list__unit:nth-child(n+3) {
+      margin-right: 14px; }
+  .login-section {
+    margin-right: 2px; }
+  .navigation__list {
+    display: block;
+    padding-left: 12px;
+    width: 765px;
+    left: 39px; }
+    .navigation__list__unit {
+      padding: 0 7.75px; }
+      .navigation__list__unit:first-child {
+        padding-left: 8px; } }

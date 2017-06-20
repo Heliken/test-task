@@ -1,0 +1,340 @@
+@import "../fonts/roboto.css";
+@import "normalize.css";
+@import "../fonts/heliosCond.css";
+$logo-bg:#ffcc00;
+$text-color:#252525;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+     -webkit-border-top-right-radius: $radius;
+     border-top-right-radius: $radius;
+     background-clip: padding-box;
+}
+
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
+}
+
+@mixin transition($time) {	
+    -moz-transition: all ease-out $time;
+    -o-transition: all ease-out $time;
+    -webkit-transition: all ease-out $time;
+    transition: all ease-out $time;
+}
+@mixin box-sizing {
+  -webkit-box-sizing: border-box; // Safari <= 5
+     -moz-box-sizing: border-box; // Firefox <= 19
+          box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header{
+	position: relative;
+	color:$text-color;
+	width:1170px;
+	margin:0 auto;
+	&__banner{
+		margin:21px 0 0 30px;
+		float:left;
+		background-color:#e2e2e2;
+		width: 253px;
+		height: 70px;
+	}
+}
+.logo{
+	width: 210px;
+	&-header{
+		float:left;
+		margin-top:19px;
+	}
+	&__img{
+		position: relative;
+		width: 210px;
+		height: 111px;
+		background-color: $logo-bg;
+		img{
+			position: absolute;
+			margin:auto;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+		}
+	}
+	&__title{
+		font-family: "HeliosCondBold";
+		text-align: center;
+		line-height: 32px;
+		height:35px;
+		font-family: HeliosCondBold;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #000;
+	}
+}
+.top-menu{
+	font-family: 'robotoregular',serif;
+	font-size:12px;
+	width:930px;
+	height:38px;
+	float:right;
+	line-height:22px;
+	border-bottom:1px solid #d7d7d7;
+	&__list{
+		padding:0;
+		&__unit{
+			&:nth-child(-n+3){
+				margin-right: 22px;
+			}
+			&:nth-child(n+4){
+				margin-right:20px;
+			}
+			list-style-type:none;
+			float:left;
+			a{
+
+				color:inherit;
+			}
+		}
+	}
+}
+.login-section{
+	float:right;
+	width:128px;
+	&__enter{
+		cursor:pointer;
+		float: left;
+	}
+	&__register{
+		cursor:pointer;
+		float:right;
+		position: relative;
+		&:before{
+			content: "";
+		    position: absolute;
+		    top: 7px;
+		    left: -16px;
+		    height: 11px;
+		    width: 2px;
+		    background-color: #777777;
+		}
+	}
+}
+.basket{
+	height:73px;
+	&-header{
+		margin:20px 0 0 30px;
+		float:left;
+	}
+	&__info{
+		padding-top:1px;
+		font-family: 'robotoregular',serif;
+		font-size:12px;
+		width:140px;
+		float:left;
+		height: inherit;
+		margin-right:27px;
+		&__unit{
+			text-decoration: underline;
+			width: 100%;
+			height:33.3%;
+			line-height: 16px;
+			padding-left:30px;
+			background-repeat: no-repeat;
+			background-position: 0px 0px;
+			a{
+				color:inherit;
+			}
+			&:first-child{
+				letter-spacing:1px;
+				background-image: url('../img/basket_icon-1.png');
+			}
+			&:nth-child(2){
+				background-image: url('../img/basket_icon-2.png');
+				background-position: 5px 5px;
+			}
+			&:last-child{
+				background-position: 1px 6px;
+				background-image: url('../img/basket_icon-3.png');
+			}
+			&:not(:first-child){
+				line-height:26px;
+			}
+		}
+	}
+	&__preview{
+		float:left;
+		&__unit{
+			position: relative;
+			@include box-sizing;
+			width:72px;
+			height:73px;
+			border:1px solid #d9d9d9;
+			float:left;
+			a:not(:last-child){
+				margin-right: 12px;
+			}
+			&:not(:last-child){
+				margin-right:12px;
+			}
+			img{
+				max-width: 100%;
+				position: absolute;
+				margin:auto;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+			}
+		}
+	}
+}
+.info{
+	margin-top:19px;
+	width:183px;
+	&-header{
+		float:right;
+	}
+	&__worktime{
+		font-size: 12px;
+		font-family: 'roboto';
+		span{
+			display: inline-block;
+			margin-right: 18px;
+			font-family: 'robotobold';
+		}
+	}
+	&__phone{
+		font-family: 'robotobold';
+	    font-size: 25px;
+	    height: 58px;
+	    line-height: 57px;
+	    display: block;
+	    letter-spacing: -0.7px;
+	}
+	&__city{
+		padding-top: 5px;
+		@include box-sizing;
+		border-top:1px solid #d7d7d7;
+		font-family: 'roboto';
+		font-size: 12px;
+		position: relative;
+		&:before{
+			position:absolute;
+			content:"";
+
+		}
+		&__name{
+			float:left;
+		}
+		&__switch{
+			position: relative;
+			text-decoration:underline;
+			text-decoration-style:dotted; 
+			float:right;
+			cursor:pointer;
+			letter-spacing: 0.2px;
+			&:before{
+				content:"";
+				top:2px;
+				left:-12px;
+				position:absolute;
+				border-style: solid;
+				border-width: 4.5px 0 4.5px 8px;
+				border-color: transparent transparent transparent $text-color;
+			}
+
+		}
+	}
+}
+.navigation{
+	@include border-radius(10px);
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	background-color: $text-color;
+	left:0;
+	top:179px;
+	height:35px;
+	width:100%;
+	font-family: 'roboto';
+	font-size: 14px;
+	position: relative;
+	&__search{
+		position: absolute;
+		top:0;
+		left:0;
+		@include border-left-radius(8px);
+		cursor: pointer;
+		height: inherit;
+		width:39px;
+		background:url(../img/nav_search_icon.png) no-repeat 50% 45%;
+		background-color: $logo-bg;
+		&__filed{
+			height:inherit;
+			position: absolute;
+		}
+	}
+	&__list{
+		width: 884px;
+		display: flex;
+    	justify-content: space-between;
+		padding:0;
+		margin:0;
+		position: absolute;
+		left:99px;
+		top:0;
+		height: inherit;
+		&__unit{
+			padding:0 18px;
+			list-style-type: none;
+			float:left;
+			line-height: 35px;
+			@include transition(.3s);
+			&:first-child{
+				padding-left: 20px;
+			}
+			a{
+				color:#fff;
+			}
+			&:hover{
+				background-color: $logo-bg;
+				a{
+					color:$text-color;
+				}
+			}
+		}
+	}
+	&__sale{
+		text-transform: uppercase;
+		@include border-right-radius(8px);
+		width:128px;
+		position: absolute;
+		top:0;
+		right:0;
+		line-height: 35px;
+		text-align: center;
+		background-color: $logo-bg;
+		a{
+			font-family: 'roboto';
+			color:$text-color;
+		}
+	}
+}
+
+

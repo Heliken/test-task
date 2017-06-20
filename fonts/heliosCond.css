@@ -1,0 +1,9 @@
+@font-face {
+			font-family: "HeliosCondBold";
+			src: url("../fonts/HeliosCondBold.eot");
+			src: url("../fonts/HeliosCondBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/HeliosCondBold.woff") format("woff"),
+			url("../fonts/HeliosCondBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}

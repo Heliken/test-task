@@ -1,0 +1,41 @@
+@media screen and (max-width: 1230px){
+	.header{
+		width:932px;
+		&__banner{
+			display:none;
+		}
+	}
+	.top-menu{
+		width:74.19%;
+		&__list{
+			&__unit{
+				&:nth-child(-n+2){
+					margin-right: 16px;
+				}
+				&:nth-child(3){
+					display: none;
+				}
+				&:nth-child(n+3){
+					margin-right:14px;
+				}
+			}
+		}
+	}
+	.login-section{
+		margin-right:2px;
+	}
+	.navigation{
+		&__list{
+			display: block;
+			padding-left:12px;
+			width:765px;
+			left:39px;
+			&__unit{
+				&:first-child{
+					padding-left:8px;
+				}
+				padding:0 7.75px;
+			}
+		}
+	}
+}

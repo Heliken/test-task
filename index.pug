@@ -1,0 +1,54 @@
+html(lang="en")
+	head
+		meta(charset="UTF-8")/
+		title Магазин инструмента
+		// inject:css
+		// endinject
+	body
+		header(class="header")
+			div(class="logo logo-header")
+				div(class="logo__img")
+					img(src="img/logo.png" alt="logo")
+				div(class="logo__title") магазин инструмента
+			div(class="top-menu")
+				ul(class="top-menu__list ")
+					li(class="top-menu__list__unit"): a(href='#') Каталог инструментов
+					li(class="top-menu__list__unit"): a(href='#') Все для сада
+					li(class="top-menu__list__unit"): a(href='#') Ручной инструмент
+					li(class="top-menu__list__unit"): a(href='#') Электрика
+					li(class="top-menu__list__unit"): a(href='#') Доставка
+					li(class="top-menu__list__unit"): a(href='#') Оплата
+					li(class="top-menu__list__unit"): a(href='#') О нас
+				div(class="login-section ")
+					div(class="login-section__enter") Вход
+					div(class="login-section__register") Регистрация
+			div(class="header__banner")
+			div(class="basket basket-header")
+				div(class="basket__info")
+					div(class="basket__info__unit"): a(href="#") 3 шт. /  17 250 р.
+					div(class="basket__info__unit"): a(href="#") Избранное (7)
+					div(class="basket__info__unit"): a(href="#") К сравнению (5)
+				div(class="basket__preview")
+					a( href="#" class="basket__preview__unit"): img(src="img/basket_product-1.jpg" alt="product")
+					a( href="#" class="basket__preview__unit"): img(src="img/basket_product-2.jpg" alt="product")
+					a( href="#" class="basket__preview__unit"): img(src="img/basket_product-3.jpg" alt="product")
+			div(class="info info-header")
+				div(class="info__worktime") <span>Время работы:</span> 10:00 &mdash; 19:00
+				div(class="info__phone") 8 495 721-25-25
+				div(class="info__city")
+					div(class="info__city__name") Москва
+					div(class="info__city__switch") сменить
+			nav(class="navigation")
+				div(class="navigation__search")
+					div(class="navigation__search__field")
+				ul(class="navigation__list")
+					li(class="navigation__list__unit"): a(href="#") Перфораторы
+					li(class="navigation__list__unit"): a(href="#") Дрели
+					li(class="navigation__list__unit"): a(href="#") Шлифмашины
+					li(class="navigation__list__unit"): a(href="#") Пистолеты
+					li(class="navigation__list__unit"): a(href="#") Электропилы
+					li(class="navigation__list__unit"): a(href="#") Наборы инструментов
+					li(class="navigation__list__unit"): a(href="#") Аксессуары
+				div(class="navigation__sale"): a(href="#") Распродажа
+		// inject:js
+		// endinject
