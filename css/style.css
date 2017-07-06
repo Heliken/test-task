@@ -22,6 +22,10 @@
 @font-face {
   font-family: LytigaPro-Italic;
   src: url(../fonts/LytigaPro/LytigaPro-Italic.otf); }
+section {
+  position: relative;
+  min-width: 1280px; }
+
 body {
   color: #fff;
   height: 100%;
@@ -864,15 +868,15 @@ body {
 
 .where {
   padding-top: 100px;
-  padding-bottom: 250px;
-  background-image: url(../img/where-bg.png);
-  background-repeat: no-repeat;
-  background-position: 690px 260px; }
+  padding-bottom: 250px; }
   .where .wrapper {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0px 108px; }
+    padding: 0px 108px;
+    background-image: url(../img/where-bg.png);
+    background-repeat: no-repeat;
+    background-position: 390px 179px; }
   .where-title {
     font-size: 72px;
     font-family: MamontovBlack;
@@ -892,7 +896,7 @@ body {
       font-family: LytigaPro-Regular; }
   .where-arrow {
     position: absolute;
-    top: 372px;
-    left: 100px; }
+    top: 391px;
+    left: 112px; }
 
 /*# sourceMappingURL=style.css.map */

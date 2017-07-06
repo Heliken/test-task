@@ -56,6 +56,10 @@ $light-grey:#999999;
 	src: url(../fonts/LytigaPro/LytigaPro-Italic.otf);
 }
 
+section{
+	position: 	relative;
+	min-width: 1280px;
+}
 
 body{
 	color:#fff;
@@ -1012,12 +1016,13 @@ body{
 	.wrapper{
 		@include box-sizing;
 		padding:0px 108px;
+		background-image: url(../img/where-bg.png);
+		background-repeat: no-repeat;
+		background-position: 390px 179px;
 	}
 	padding-top: 100px;
 	padding-bottom:250px;
-	background-image: url(../img/where-bg.png);
-	background-repeat: no-repeat;
-	background-position: 690px 260px;
+
 	&-title{
 		font-size: 72px;
 		font-family: MamontovBlack;
@@ -1041,7 +1046,7 @@ body{
 	}
 	&-arrow{
 		position: absolute;
-		top:372px;
-		left:100px;
+   		top: 391px;
+    	left: 112px;
 	}
 }
