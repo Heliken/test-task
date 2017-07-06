@@ -1,74 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Магазин инструмента</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <!-- inject:css-->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media-queries.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="fonts/heliosCond.css">
-    <link rel="stylesheet" href="fonts/roboto.css">
-    <!-- endinject-->
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo logo-header">
-        <div class="logo__img"><img src="img/logo.png" alt="logo"></div>
-        <div class="logo__title">магазин инструмента</div>
-      </div>
-      <div class="top-menu">
-        <ul class="top-menu__list ">
-          <li class="top-menu__list__unit"><a href="#">Каталог инструментов</a></li>
-          <li class="top-menu__list__unit"><a href="#">Все для сада</a></li>
-          <li class="top-menu__list__unit"><a href="#">Ручной инструмент</a></li>
-          <li class="top-menu__list__unit"><a href="#">Электрика</a></li>
-          <li class="top-menu__list__unit"><a href="#">Доставка</a></li>
-          <li class="top-menu__list__unit"><a href="#">Оплата</a></li>
-          <li class="top-menu__list__unit"><a href="#">О нас</a></li>
-        </ul>
-        <div class="login-section ">
-          <div class="login-section__enter">Вход</div>
-          <div class="login-section__register">Регистрация</div>
-        </div>
-      </div>
-      <div class="header__banner"></div>
-      <div class="basket basket-header">
-        <div class="basket__info">
-          <div class="basket__info__unit"><a href="#">3 шт. /  17 250 р.</a></div>
-          <div class="basket__info__unit"><a href="#">Избранное (7)</a></div>
-          <div class="basket__info__unit"><a href="#">К сравнению (5)</a></div>
-        </div>
-        <div class="basket__preview"><a class="basket__preview__unit" href="#"><img src="img/basket_product-1.jpg" alt="product"></a><a class="basket__preview__unit" href="#"><img src="img/basket_product-2.jpg" alt="product"></a><a class="basket__preview__unit" href="#"><img src="img/basket_product-3.jpg" alt="product"></a></div>
-      </div>
-      <div class="info info-header">
-        <div class="info__worktime"><span>Время работы:</span> 10:00 &mdash; 19:00</div>
-        <div class="info__phone">8 495 721-25-25</div>
-        <div class="info__city">
-          <div class="info__city__name">Москва</div>
-          <div class="info__city__switch">сменить</div>
-        </div>
-      </div>
-      <nav class="navigation">
-        <div class="navigation__search">
-          <div class="navigation__search__field"></div>
-        </div>
-        <ul class="navigation__list">
-          <li class="navigation__list__unit"><a href="#">Перфораторы</a></li>
-          <li class="navigation__list__unit"><a href="#">Дрели</a></li>
-          <li class="navigation__list__unit"><a href="#">Шлифмашины</a></li>
-          <li class="navigation__list__unit"><a href="#">Пистолеты</a></li>
-          <li class="navigation__list__unit"><a href="#">Электропилы</a></li>
-          <li class="navigation__list__unit"><a href="#">Наборы инструментов</a></li>
-          <li class="navigation__list__unit"><a href="#">Аксессуары</a></li>
-        </ul>
-        <div class="navigation__sale"><a href="#">Распродажа</a></div>
-      </nav>
-    </header>
-    <!-- inject:js-->
-    <!-- endinject-->
-  </body>
+	<head>
+	    <meta http-equiv="content-type" content="text/html" >
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	    <title>Минкульт</title>
+	    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+  	</head>
+  	<body>
+  		<section class="main">
+  			<div class="gradient"></div>
+  			<div class="wrapper">
+	  			<h1 class="main-title">Мы открылись!</h1>
+	  			<ul class="main-menu">
+	  				<li class="main-menu-unit">Меню</li>
+	  				<li class="main-menu-unit">Мероприятия</li>
+	  				<li class="main-menu-unit">Контакты</li>
+	  			</ul>
+	  		</div>
+	  		<div class="main-logo"><img src="img/logo.png" alt="logo"></div>
+	  		<div class="main-socials">
+	  			<a class="main-socials-unit" target="_blank" href=""><img src="img/socials-insta.png" alt=""></a>
+	  			<a class="main-socials-unit" target="_blank" href=""><img src="img/socials-fb.png" alt="" ></a>
+	  			<a class="main-socials-unit" target="_blank" href=""><img src="img/socials-vk.png" alt="" ></a>
+	  		</div>
+	  		<div class="main-mozgva">Играть в Мозгву</div>
+	  		<div class="curtain-left">
+	  			<img src="img/curtain-left.png" alt="">
+	  			<p>К &mdash; культура</p>
+	  		</div>
+	  		<div class="curtain-right">
+	  			<img src="img/curtain-right.png" alt="">
+	  			<p>Я не враг своему здоровью! Культурно отдыхать умею!</p>
+	  		</div>
+  		</section>
+  		<section class="table-order">
+  			<div class="wrapper">
+  				<h2 class="table-order-title">Заказать столик</h2>
+  			</div>
+  		</section>
+  		<section class="delivery-order">
+  			<div class="wrapper">
+  				<h3 class="delivery-order-title">Доставка кофе и чая в офис</h3>
+  				<div class="delivery-order-info">
+	  				<p class="left">
+	  					Если вы трудитесь в Большевике и у вас не такого вкусного кофе, как у нас, — а у вас его такого вкусного точно нет, то закажите его здесь. <br> Мы принесем.
+	  				</p>
+					<p class="right">
+						Оплату мы принимаем как наличными, так и картами. Онлайн — пока нет. <br><br>Также заказать можно по телефону <br><br>
+						<span>+7 977 148-90-60</span>
+					</p>
+		  		</div>
+  				<div class="slide-wrap ">
+  					<div class="slide slide-1">	
+		  				<div class="order">
+		  					<div class="order-switch">
+		  						<div class="order-switch-unit left">Ланчи</div>
+		  						<div class="order-switch-unit right active">Кофе</div>
+		  					</div>
+		  					<div class="order-main">
+		  						<div class="order-main-coffe toggle">
+		  							<div class="order-main-unit">
+		  								<div class="img">
+		  									<img src="img/espresso.png" alt="coffe">
+		  								</div>
+		  								<div class="info">
+		  									<div class="info-title">
+		  										Эспрессо <span>30 мл</span>
+		  									</div>
+		  									<div class="info-about">
+		  										30 мл: Зерна арабики, любовь
+		  									</div>
+		  									<div class="info-amount dot">
+		  										<span>Количество</span>
+		  										<input type="text" class="info-amount-number" placeholder="0">
+		  											
+		  										
+		  									</div>
+		  									<div class="info-size dot">
+		  										<span>Размер</span>
+		  										<div class="info-size-unit">
+		  											ХХЛ
+		  										</div>
+		  									</div>
+		  									<div class="info-price">
+		  										1300 Р
+		  									</div>
+		  									<div class="info-add">Добавить</div>
+		  								</div>
+		  							</div>
+		  							<div class="order-main-unit">
+		  								<div class="img">
+		  									<img src="img/coffe.png" alt="coffe">
+		  								</div>
+		  								<div class="info">
+		  									<div class="info-title">
+		  										Американо <span>120 мл</span>
+		  									</div>
+		  									<div class="info-about">
+		  										30 мл: Зерна арабики, любовь
+		  									</div>
+		  									<div class="info-amount dot">
+		  										<span>Количество</span>
+		  										<input type="text" class="info-amount-number" placeholder="0">
+		  									</div>
+		  									<div class="info-size dot">
+		  										<span>Размер</span>
+		  										<div class="info-size-unit">
+		  											ХХЛ
+		  										</div>
+		  									</div>
+		  									<div class="info-price">
+		  										150 Р
+		  									</div>
+		  									<div class="info-add">Добавить</div>
+		  								</div>
+		  							</div>
+		  							<div class="order-main-unit">
+		  								<div class="img">
+		  									<img src="img/frappe.png" alt="coffe">
+		  								</div>
+		  								<div class="info">
+		  									<div class="info-title">
+		  										Фраппе <span>170 мл</span>
+		  									</div>
+		  									<div class="info-about">
+		  										30 мл: Зерна арабики, любовь
+		  									</div>
+		  									<div class="info-amount dot">
+		  										<span>Количество</span>
+		  										<input type="text" class="info-amount-number" placeholder="0">
+		  									</div>
+		  									<div class="info-size dot">
+		  										<span>Размер</span>
+		  										<div class="info-size-unit">
+		  											ХХЛ
+		  										</div>
+		  									</div>
+		  									<div class="info-price">
+		  										250 Р
+		  									</div>
+		  									<div class="info-add">Добавить</div>
+		  								</div>
+		  							</div>
+		  							<div class="order-main-unit">
+		  								<div class="img">
+		  									<img src="img/espresso.png" alt="coffe">
+		  								</div>
+		  								<div class="info">
+		  									<div class="info-title">
+		  										Эспрессо <span>30мл</span>
+		  									</div>
+		  									<div class="info-about">
+		  										30 мл: Зерна арабики, любовь
+		  									</div>
+		  									<div class="info-amount dot">
+		  										<span>Количество</span>
+		  										<input type="text" class="info-amount-number" placeholder="0">
+
+
+		  									</div>
+		  									<div class="info-size dot">
+		  										<span>Размер</span>
+		  										<div class="info-size-unit">
+		  											ХХЛ
+		  										</div>
+		  									</div>
+		  									<div class="info-price">
+		  										1300 Р
+		  									</div>
+		  									<div class="info-add">Добавить</div>
+		  								</div>
+		  							</div>
+		  							<div style="clear:both">	</div>
+		  						</div>
+		  						<div class="order-main-lunch toggle"></div>
+		  					</div>
+		  					<div class="order-result">
+		  						<p class="order-result-total">Итого: <span>1450</span> Р</p>
+		  						<div class="order-result-button button next-button">Далее</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  			<div class="slide slide-2">
+		  				<div class=" slide-2-button button-prev button">&larr; Назад</div>
+		  				<div class="order-2">
+		  					<div class="order-2-unit">
+		  						<div class="order-2-unit-img">
+		  							<img src="img/espresso.png" alt="">
+		  						</div>
+		  						<div class="order-2-unit-info">
+			  						<div class="order-2-unit-title">Эспрессо</div>
+			  						<div class="order-2-unit-price">1300 P</div>
+			  						<div class="order-2-unit-about"><span class="order-2-unit-about-amount">13</span> шт.,<span class="order-2-unit-about-size"> ХХЛ</span></div>
+			  						<div class="order-2-unit-remove remove">Убрать</div>	
+		  						</div>	  						
+		  					</div>
+		  					<div class="order-2-unit">
+		  						<div class="order-2-unit-img">
+		  							<img src="img/frappe.png" alt="">
+		  						</div>
+		  						<div class="order-2-unit-info">
+			  						<div class="order-2-unit-title">Фраппе</div>
+			  						<div class="order-2-unit-price">200 P</div>
+			  						<div class="order-2-unit-about"><span class="order-2-unit-about-amount">1</span> шт.,<span class="order-2-unit-about-size"> ХХЛ</span></div>
+			  						<div class="order-2-unit-remove remove">Убрать</div>	
+		  						</div>	  						
+		  					</div>
+		  				</div>
+		  				<form action="" class="slide-2-form">
+		  					<p class="slide-2-form-title">Куда доставить?</p>
+		  					<input class="slide-2-form-name" type="text" placeholder="Ваше имя">
+		  					<input class="slide-2-form-organisation" type="text" placeholder="Номер офиса и название организации">
+		  					<input class="slide-2-form-phone" type="phone" placeholder="Номер телефона">
+		  					<div class="slide-2-form-result">Итого: <span>1450</span> Р</div>
+		  					<input type="submit" class="button slide-2-form-submit next-button" value="Далее">
+		  				</form>
+		  			</div>
+		  			<div class="slide slide-3">
+		  				<div class="order-2">
+		  					<div class="order-2-unit">
+		  						<div class="order-2-unit-img">
+		  							<img src="img/espresso.png" alt="">
+		  						</div>
+		  						<div class="order-2-unit-info">
+			  						<div class="order-2-unit-title">Эспрессо</div>	
+			  						<div class="order-2-unit-about"><span class="order-2-unit-about-amount">13</span> шт.,<span class="order-2-unit-about-size"> ХХЛ</span></div>
+		  						</div>	  						
+		  					</div>
+		  					<div class="order-2-unit">
+		  						<div class="order-2-unit-img">
+		  							<img src="img/frappe.png" alt="">
+		  						</div>
+		  						<div class="order-2-unit-info">
+			  						<div class="order-2-unit-title">Фраппе</div>
+			  						<div class="order-2-unit-about"><span class="order-2-unit-about-amount">1</span> шт.,<span class="order-2-unit-about-size"> ХХЛ</span></div>	
+		  						</div>  						
+		  					</div>
+		  					<div class="order-2-unit result-unit">
+		  						<p class="order-unit-name">Иванов Иван</p>
+		  						<p class="order-unit-office">из оф. 345 «Навальнагаштаб»</p>
+		  					</div>
+		  				</div>
+		  				<div class="result">Итого: <span>1450</span> Р <div class="button button-return">На главную</div></div>
+		  			</div>
+	  			</div>
+  			</div>
+  		</section>
+  		<section class="events">
+  			<div class="wrapper">
+	  			<div class="events-title">
+	  				Ваши мероприятия в нашем ресторане? <span>Можно!</span> Нужно!
+	  			</div>
+				<div class="events-info">
+					<div class="events-info-text">
+						Мы ждем ваших заявок на проведения мероприятий. Это может быть что угодно: свадьба, день рождения, презентация, конференция. Мы готовы!
+						<p>+7 (977) 148-90-60</p>
+					</div>
+					<div class="events-info-button button">Оставить заявку</div>
+				</div>
+				<div class="events-statistics">
+					<img src="img/events-statistics.png" alt="">
+				</div>
+			</div>
+  		</section>
+  		<div class="popup">
+  			<div class="popup-wrapper-additional">
+				<div class="popup-close">
+					Закрыть
+				</div>
+				<div class="popup-wrapper">
+					<div class=" popup-slide popup-slide-1">
+						<div class="popup-title">
+							Заявка 	<br>	 на мероприятие
+						</div>
+						<p class="popup-about">
+							Заполните, пожалуйста, эту заявку. <br>Если появятся вопросы, позвоните <br> Илье Маркееву по телефону <br>+7(977)148-90-60
+						</p>
+						<form class="popup-form" onsubmit="return false">
+							<p class="title">Контактные данные</p>
+							<input type="text" class="popup-form-input-name" placeholder="Ваши имя, фамилия, отчество?">
+							<input type="phone" class="popup-form-input-phone" placeholder="Номер телефона*" required>
+							<input type="email" class="popup-form-input-email" placeholder="Электронная почта">
+							<p class="title">Когда все произойдет?</p>
+							<div class="month dot">
+								<span>Месяц</span>
+								<ul>
+									<li>
+										<input type="radio" id="january" name="month" value="Январь">
+										<label for="january">Январь</label>
+									</li>
+									<li>
+										<input type="radio" id="february" name="month" value="Февраль">
+										<label for="february">Февраль</label>
+									</li>
+									<li>
+										<input type="radio" id="march" name="month" value="Март">
+										<label for="march">Март</label>
+									</li>
+									<li>
+										<input type="radio" id="april" name="month" value="Апрель">
+										<label for="april">Апрель</label>
+									</li>
+									<li>
+										<input type="radio" id="may" name="month" value="Май">
+										<label for="may">Май</label>
+									</li>
+									<li>
+										<input type="radio" id="june" name="month" value="Июнь">
+										<label for="june">Июнь</label>
+									</li>
+									<li>
+										<input type="radio" id="july" name="month" value="Июль">
+										<label for="july">Июль</label>
+									</li>
+									<li>
+										<input type="radio" id="august" name="month" value="Август">
+										<label for="august">Август</label>
+									</li>
+									<li>
+										<input type="radio" id="september" name="month" value="Сентябрь">
+										<label for="september">Сентябрь</label>
+									</li>
+									<li>
+										<input type="radio" id="october" name="month" value="Октябрь">
+										<label for="october">Октябрь</label>
+									</li>
+									<li>
+										<input type="radio" id="november" name="month" value="Ноябрь">
+										<label for="november">Ноябрь</label>
+									</li>
+									<li>
+										<input type="radio" id="december" name="month" value="Декабрь">
+										<label for="december">Декабрь</label>
+									</li>
+								</ul>
+							</div>
+							<span class="dot"><input type="text" class="day dot" placeholder="День"></span>
+							
+							<p class="title">В котором часу?</p>
+							<span class="dot">	<input type="text" class="hour " placeholder="12"></span>
+							<span class="dot"><input type="text" class="minute " placeholder="00"></span>
+							<p class="title">Количество человек?</p>
+							<span class="dot"><input type="text" class="amount" placeholder="23"></span>
+							<p class="title">Особые пожелания</p>
+							<input type="text" class="popup-form-input-comment" placeholder="Нужны ведущие, например">
+							<p class="alert">Укажите, пожалуйста, номер телефона</p>
+							<input type="submit" class="popup-form-input-submit button" value="Далее"> -->  
+						</form>
+					</div>
+					<div class=" popup-slide popup-slide-2">
+						<div class="popup-title">
+							Ну вот и все! <br>Готово!
+						</div>
+						<p>Ваша заявка отправлена. Мы изучим <br>
+						 ее и позвоним вам в ближайшее время. <br>
+						По поводу правильного места и вкусной еды, <br>
+						как минимум, вам больше беспокоиться <br>
+						не придется.</p>
+						<p>Ваш менеджер: <br>
+						 	<span>Илья Маркеев, +7(977)148-90-60</span>
+						</p>
+						<div class=" close-popup button">Супер! Закрыть это окно</div>
+					</div>
+				</div>
+			</div>
+  		</div>
+  		<section class="reviews">
+  			<div class="wrapper">
+	  			<div class="reviews-title">Отзывы</div>
+	  			<div class="reviews-button button"> Оставить отзыв</div>
+	  			<div class="wrap">
+		  			<div class="reviews-unit">
+		  				<div class="reviews-unit-text">Оказались в этом ресторане случайно. Выбирая между рядом расположенными украинской Кормчий и грузинским Авлабаром, зашли сюда. Очень приятная обстановка, ничто не гремит и не мешает общаться. Вкусные блюда, внушительные порции! Любезные официанты, неназойливые, улыбаются искренне, а не на автомате. Вполне подходит для романтики.</div>
+		  				<div class="reviews-unit-author">Логин</div>
+		  			</div>
+		  			<div class="reviews-unit">
+		  				<div class="reviews-unit-text">Оказались в этом ресторане случайно. Выбирая между рядом расположенными украинской Кормчий и грузинским Авлабаром, зашли сюда. Очень приятная обстановка, ничто не гремит и не мешает общаться. Вкусные блюда, внушительные порции! Любезные официанты, неназойливые, улыбаются искренне, а не на автомате. Вполне подходит для романтики.</div>
+		  				<div class="reviews-unit-author">Логин</div>
+		  			</div>
+		  			<div class="reviews-unit">
+		  				<div class="reviews-unit-text">Все понравилось, спасибо! Очень вкусные салаты! Вечер прошел на 4+ </div>
+		  				<div class="reviews-unit-author">Логин</div>
+		  			</div>
+		  			<div class="reviews-unit">
+		  				<div class="reviews-unit-text">Первая севичерия Москвы Latinos может побороться за титул самой камерной и уютной веранды на набережной – 40 посадок, зато сколько красок и деталей!
+						<br>
+						По периметру пространство украшено пальмами, каждый стол декорирован цветущими кактусами, а подушки с национальными орнаментами добавляют колорита. Девушки-бармены за стойкой Latinosмогут смешать любой коктейль, но не пропустите фирменные напитки на текиле, писко и роме.Словом, вот она – самая весёлая веранда в городе: вечеринки, тропические коктейли, яркий интерьер и непередаваемая атмосфера веселья в латиноамериканском стиле.</div>
+		  				<div class="reviews-unit-author">Логин</div>
+		  			</div>
+		  			<div class="reviews-unit">
+		  				<div class="reviews-unit-text">Мой муж иностранец, поэтому мне всегда хотелось, чтобы по приезду в Россию у него была возможность попробовать блюда традиционной русской кухни. Забронировали столик в ресторане «Симпозиум», находится ресторан в центре, около Владимирской. Приятный персонал, как администраторы, так и официанты. Сам ресторан произвел впечатление изысканного и дорогого заведения, однако, цены приятно удивили. Большой выбор блюд и напитков. Больше всего запомнились закуска из краба с антоновкой и розовыми томатами и уха из окуня. Остались довольны вечером. Придем в этот ресторан точно еще не раз. </div>
+		  				<div class="reviews-unit-author">Терренс Филлип</div>
+		  			</div>
+		  			<div class="reviews-unit">
+		  				<div class="reviews-unit-text">Гуляли на свадьбе в этом уютном ресторане. Очень и очень вкусно! Все свежее и много. Не экономили, и это приятно. Алкоголь марочный. Брали вино и коньяк. Домой забрали три сумки оставшейся еды:шашлыка разного вида, вкючая горячую осетрину, салаты, зелень. И персоналу отдельное спасибо! Очень вежливые. А это так приятно, когда улыбаются! Благодарим. Семья Кочулиных</div>
+		  				<div class="reviews-unit-author">Терренс Филлип</div>
+		  			</div>
+		  			<div class="reviews-unit">
+		  				<div class="reviews-unit-text">Ресторан Seven это мое открытие в этом году. Место просто великолепное. Особая обстановка располагающая к полнейшему релаксу, это то что как раз просто необходимо в таком сумасшедшем графике. Очень много живых растений, попадаешь действительно в какой-то райский уголок. Большие оконные витражи, панорамный вид на город, плюс хорошая музыка, великолепная кухня, и официанты- профи, все вместе создают просто незабываемые ощущения. Иногда захожу туда просто выпить чашечку кофе с кусочком торта и расслабиться. Пару раз устраивали с супругом себе романтический ужин. Авторские блюда в Seven выше всяких похвал, и это при вполне демократичных ценах, в сравнении с подобными заведениями такого класса. Подводя итоги, хочу сказать, что это ресторан в который хочется вернуться еще раз.</div>
+		  				<div class="reviews-unit-author">Терренс Филлип</div>
+		  			</div>		
+		  		</div>
+	  		</div>
+  		</section>
+  		<section class="where">
+  			<div class="wrapper">
+	  			<div class="where-title">Как добраться</div>
+	  			<div class="where-info">
+	  				<p class="title">Адрес</p>
+	  				<p class="text">Метро «Белорусская» Ленинградский пр., 15 Бизнес-центр «Большевик» +7 495 666-66-66</p>
+	  			</div>
+	  			<div class="where-info">
+	  				<p class="title">График работы</p>
+	  				<p class="text">Понедельник–суббота <br> 10:00–23:00</p>
+	  			</div>
+	  			<img src="img/where-arrow.png" class="where-arrow">
+	  		</div>
+  		</section>
+  	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+  	</body>
 </html>
